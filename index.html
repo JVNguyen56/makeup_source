@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Make-Up Source</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<div id = "win">
+<body>
+  <div id="preloader"></div>
+
+<!--==========================
+  Intro Section
+============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+          <img class="" src="img/ms1.png" alt="Imperial">
+        </div>
+
+        <h1>Welcome to "The Make-Up Source"</h1>
+        <h2>We offer make-up needs for your <span class="rotating">"EYES", "FACE", "LIPS", "ACCESSORIES"</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">HOW-TO VIDEOS</a>
+          <a href="#services" class="btn-services">WHAT WE OFFER</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Header Nav Bar Section
+============================-->
+  <header id="header">
+    <div class="container"><!--  why is this here again? -->
+
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="img/ms1.png" alt="" title="" /></img></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+        <li class="menu-active"><a href="#hero"></a></li>
+          <li class="menu-has-children eye"><a>EYES</a>
+            <ul>
+             <li class="menu-has-children eye"><a>Eyeliner</a>
+                <ul>
+                  <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="eyeliner">e.l.f.</a></li>
+                  <li class = 'eye'><a class ='we' data-brand="covergirl" data-products="eyeliner">Covergirl</a></li>
+                  <li class = 'eye'><a class ='we' data-brand="maybelline" data-products="eyeliner">Maybelline</a></li>
+                </ul>
+              </li>
+               <li class="menu-has-children eye"><a>Eyeshadow</a>
+                <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="eyeshadow">e.l.f.</a></li>
+        <li class = 'eye'><a class ='we' data-brand="covergirl" data-products="eyeshadow">Covergirl</a></li>
+        <li class = 'eye'><a class ='we' data-brand="maybelline" data-products="eyeshadow">Maybelline</a></li>
+      </ul>
+    </li>
+    <li class="menu-has-children eye"><a>Mascara</a>
+               <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="mascara">e.l.f.</a></li>
+        <li class = 'eye'><a class ='we' data-brand="covergirl" data-products="mascara">Covergirl</a></li>
+        <li class = 'eye'><a class ='we' data-brand="maybelline" data-products="mascara">Maybelline</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+
+<li class="menu-has-children face"><a>FACE</a>
+  <ul>
+    <li class="menu-has-children face"><a>Blush</a>
+                <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="blush">e.l.f.</a></li>
+        <li class = 'face'><a class ='we' data-brand="covergirl" data-products="blush">Covergirl</a></li>
+        <li class = 'face'><a class ='we' data-brand="maybelline" data-products="blush">Maybelline</a></li>
+      </ul>
+    </li>
+    <li class="menu-has-children face"><a>Bronzer</a>
+                <ul>
+       <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="bronzer">e.l.f.</a></li>
+        <li class = 'face'><a class ='we' data-brand="covergirl" data-products="bronzer">Covergirl</a></li>
+        <li class = 'face'><a class ='we' data-brand="maybelline" data-products="bronzer">Maybelline</a></li>
+      </ul>
+    </li>
+    <li class="menu-has-children face"><a>Foundation</a>
+                <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="foundation">e.l.f.</a></li>
+        <li class = 'face'><a class ='we' data-brand="covergirl" data-products="foundation">Covergirl</a></li>
+        <li class = 'face'><a class ='we' data-brand="maybelline" data-products="foundation">Maybelline</a></li>
+      </ul>
+    </li>
+    
+
+  </ul>
+</li>
+
+<li class="menu-has-children lip"><a>LIPS</a>
+  <ul>
+    <li class="menu-has-children lip"><a>Lipstick</a>
+                <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="lipstick">e.l.f.</a></li>
+        <li class = 'lip'><a class ='we' data-brand="covergirl" data-products="lipstick">Covergirl</a></li>
+        <li class = 'lip'><a class ='we' data-brand="maybelline" data-products="lipstick">Maybelline</a></li>
+      </ul>
+    </li>
+  
+     <li class="menu-has-children lip"><a>Lip Liner</a>
+                <ul>
+        <li class = 'eye'><a class ='we' data-brand="e.l.f." data-products="lipstick">e.l.f.</a></li>
+        <li class = 'lip'><a class ='we' data-brand="covergirl" data-products="lipstick">Covergirl</a></li>
+        <li class = 'lip'><a class ='we' data-brand="maybelline" data-products="lipstick">Maybelline</a></li>
+      </ul>
+    </li>
+     
+    </ul>
+</li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+            <li><p id="LoginInstructions" class="navbar-text">Already have an account?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+      <ul id="login-dp" class="dropdown-menu">
+        <li>
+           <div class="row">
+              <div class="col-md-12">
+              <div id="signUpAlert" class="top text-center">
+                Login Area
+              </div>
+                 <form class="form " role="form" id="login-nav">
+                    <div class="form-group">
+                       <input type="email" class="form-control loginForm" id="txtEmail" placeholder="Email address" required>
+                    </div>
+                    <div class="form-group">
+                       <input type="password" class="form-control loginForm" id="txtPassword" placeholder="Password" required>
+                        <div class="help-block text-right loginForm"><a>Forget the password ?</a></div>
+                    </div>
+                    <div class="form-group">
+                       <button type="btnLogin" id="btnLogin" class="btn btn-primary btn-block">Log In</button>
+                       <button type="btnLogOut" id="btnLogOut" class="btn btn-warning btn-block hide">Log Out</button> 
+                    </div>
+                    <div class="checkbox loginForm">
+                       <label>
+                       <input type="checkbox"> keep me logged-in
+                       </label>
+                    </div>
+                 </form>
+              </div>
+              <div class="bottom text-center loginForm">
+                New here ? <button id="btnSignUp" class="btn btn-sm btn-success">Sign Up</button> 
+              </div>
+           </div>
+        </li>
+      </ul>
+        </li>
+      </ul>       
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+      <div class="text-center" id="newWindow"></div>
+
+    
+<!--==========================
+  How to Video Section
+============================-->
+  <section id="about">
+     <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">How-Tos and Tips</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Hacks and guides to step up your make-up game</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+
+        <div id = "player" class="col-md-12 text-center videoWrapper">
+         <iframe id='ytplayer' type ='text/html' width='600' height='400' src='https://www.youtube.com/embed/9sfdPfojPmY?autoplay=0' frameborder='0' allowfullscreen></iframe>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  What We Offer Section
+============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">What We Offer</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">We provide information for your make-up product needs</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text-center col-md-4 service-item">
+          <div class=""><img src="img/foundation.jpg" alt=""></div>
+          <h4 class="text-center service-title"><a>Face Products</a></h4>
+          <p class="text-center service-description">We can help you find foundation, blush and bronzer, concealer, concealer, powder and primer</p>
+        </div>
+        <div class="text-center col-md-4 service-item">
+         <div class=""><img src="img/eyeshadow.jpg" alt=""></div>
+          <h4 class="text-center service-title"><a>Eye Products</a></h4>
+          <p class="text-center service-description">You can access products for eyeshadow, eyeliner, mascara and brows </p>
+        </div>
+        <div class="text-center col-md-4 service-item">
+          <div class=""><img src="img/lipstick3.jpg" alt=""></div>
+          <h4 class="text-center service-title"><a>Lip Products</a></h4>
+          <p class="text-center service-description">We can help you locate lipstick and lip liners </p>
+        </div>
+      </div>
+
+  </section>
+
+<!--==========================
+  About Us Section
+============================-->
+   <section id="subscribe">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="subscribe-title">ABOUT US</h3>
+           <div class="section-title-divider"></div>
+          <p class="subscribe-text"> Whether it be lipstick or foundation, we can help you find the one you are looking for. We help locate the item you are looking for and get you to the right place to purchase it. </p>
+          <p class="subscribe-text">  You can also see what's currently trending for ideas or you can also view some of the tips and tricks videos that will help you apply your newly found make-up products. Let The Make-up Source be your guide to the look you are going for.  </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Whats Hot Section
+============================-->
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">What's Hot</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">See the different trending make-up styles</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend1.jpg);" href="https://www.pinterest.com/pin/188658671870947472/">
+            <div class="details">
+              <h4>Look 1</h4>
+              <span>Eye Styling</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend2.jpg);" href="https://www.popsugar.com/beauty/Hair-Color-Trends-Spring-2017-43133201">
+            <div class="details">
+              <h4>Look 2</h4>
+              <span>Light Face with Standout Lipstick</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend3.jpg);" href="https://www.instyle.com/beauty/makeup/red-carpet-monochromatic-makeup-trend">
+            <div class="details">
+              <h4>Look 3</h4>
+              <span>Subtle Accented Eyes and Lips</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend4.jpg);" href="https://www.hautedvie.com/eyebrow-trends-2017/">
+            <div class="details">
+              <h4>Look 4</h4>
+              <span>Neutral Face with Natural Colors</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend5.jpg);" href="https://www.pinterest.com/dailymakeupidea/lips-makeup/?lp=true">
+            <div class="details">
+              <h4>Look 5</h4>
+              <span>Neutral Face with Smokey Eyes</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend6.jpg);" href="https://glamradar.com/how-to-do-the-instagram-makeup-trend/">
+            <div class="details">
+              <h4>Look 6</h4>
+              <span>Dark Accents with Heavy Foundation</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend7.jpg);" href="https://photo.flashmode.tn/tendance-makeup-instagram-photo-by-lauren-rohrer-•-feb-29-2016-at-327pm-utc/">
+            <div class="details">
+              <h4>Look 7</h4>
+              <span>Simple Lip Accent</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(img/trend8.jpg);" href="https://www.pinterest.com/xoshaaan/celebrity-makeup/?lp=true">
+            <div class="details">
+              <h4>Look 8</h4>
+              <span>Natural color face</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Testimonials Section
+============================-->
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title"><i class="fa fa-instagram" style="font-size: 40px;" ></i>  INSTAGRAM TESTIMONIALS</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">See what people are saying about our site on Instagram</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="row"> 
+          <div class="col-md-3">
+            <div class="profile">
+              <div class="pic">
+                <div id="insta1"></div>
+              </div>
+              <h4></h4>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="quote">
+              <div id="insta1Quote">
+            </div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <div id="insta2Quote"></div> <small></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><div id="insta2"></div></div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+<!--==========================
+  Influencers Section
+============================-->
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Industry Influencers</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">These are some of the major influencers in the make-up industry today</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/pstarr.jpg" alt=""></div>
+            <h4>Patrick Starr</h4>
+            <span>Twenty-seven-year-old Patrick Starrr – born Patrick Simondac – turned his love of makeup into a YouTube empire complete with international business trips and 1.8 million subscribers.</span>
+            <div class="social">
+              <a href="https://www.youtube.com/user/theepatrickstarrr"><i class="fa fa-youtube"></i></a>
+
+             </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/mannyg.jpg" alt=""></div>
+            <h4>Manny Gutierrez</h4>
+            <span>Manny Gutierrez, at just age 25, he’s already a major social media star, who repeatedly posts photos of himself with full, vivid makeup on Instagram and YouTube. He’s part of a growing trend of men wearing makeup and altering gender stereotypes, and his career online has exploded in just a few short years pony's. He has more than 4 million followers and 2.8 million subscribers on Instagram and Youtube, respectively.</span>
+            <div class="social">
+              <a href="https://www.youtube.com/user/MannyMua733"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/kandee.jpeg" alt=""></div>
+            <h4>Kandee Johnson</h4>
+            <span>She won a Streamy Award in the Beauty category in 2016. She was a guest judge on How Do I Look and has been featured in Elle, Glamour, AOL, Yahoo, and a video series with Glamour magazine. She graduated from beauty school but realized she hated doing hair. She solely wanted to focus on make-up and soon enough landed her first make-up artist job on VH1's I Love the 80's</span>
+            <div class="social">
+              <a href="https://www.youtube.com/user/kandeejohnson"><i class="fa fa-youtube"></i></a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="img/pony.jpeg" alt=""></div>
+            <h4>Pony</h4>
+            <span>With over 600,000 subscribers on YouTube, Pony is one of South Korea's most famous beauty gurus. Her real name is Hye-Min Park, though nearly everyone refers to her by her equine nickname. She's been blogging about Korean beauty for years, so if you're looking for K-beauty inspiration, look no further than Pony.</span>
+            <div class="social">
+              <a href="https://www.youtube.com/channel/UCT-_4GqC-yLY1xtTHhwY0hA"><i class="fa fa-youtube"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Contact Section
+============================-->
+  <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Let us know if we can answer any questions</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>510 E Peltalon<br>Irvine, CA 92697</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>MakeupSource@Gmail.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>(800)MAKEUP1</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div id="messageSent"></div>
+            <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="text" id="sendMessage">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+       <div class="row">
+          <div class="col-md-5 col-md-push-2">
+            <div id="uploadMessage"></div>
+          </div>
+          <div class="col-md-5 col-md-push-3">  
+           <div id="uploadButton"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Footer
+============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; THE MAKE-UP SOURCE 2017. Developed by the Blue Man Team (JIMMY N.,BRYAN T.,BENNY L. and ERIC H).</strong>
+            </div>
+           </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/morphext/morphext.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/stickyjs/sticky.js"></script>
+  <script src="lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="js/custom.js"></script>
+
+  <script src="js/project1.js"></script>
+
+</body>
+</div>
+</html>
